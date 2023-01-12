@@ -1,0 +1,210 @@
+.myService,
+.myExperience {
+  height: 100vh;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+/* work */
+.myWork {
+  background-color: #ffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.serviceCentered,
+.experienceCentered {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+/* work */
+.workCentered {
+  min-width: 90%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myService h1,
+.experience h1,
+.work h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.work h1 {
+  margin: 30px;
+}
+.cardContainer,
+.experienceCardContainer,
+.workCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+/* experience */
+.experienceCardContainer,
+.workCardContainer {
+  flex-wrap: wrap;
+}
+.serviceCard {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #ffff;
+  background-color: #ffff;
+  transition: ease-in-out 0.5s;
+  min-height: 300px;
+}
+.serviceTitle,
+.serviceContent {
+  text-align: center;
+}
+.iconCon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 166, 0, 0.781);
+  transition: ease-in-out 0.8s;
+}
+.serviceCard:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+.serviceCard:hover .iconCon {
+  background-color: orange;
+}
+.serviceCard:hover .chrome {
+  color: white;
+}
+.chrome {
+  color: orange;
+  font-weight: 200;
+  font-size: 30px;
+}
+/* experience */
+.experienceCard {
+  background: #fff;
+  padding: 30px 70px;
+  width: 25%;
+}
+
+.namePlaceYearCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.yearCon {
+  background-color: #ffcb2f;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 15px;
+}
+.namePlaceCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+/* work */
+.workCardContainer {
+  height: 100vh;
+  align-items: flex-start;
+  margin-bottom: 130px;
+}
+.workButtonCon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 30px;
+}
+.radioButton {
+  font-size: 15px;
+  border: 1px solid #ffcb2f;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 300;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 0.5s;
+}
+.radioButton:hover {
+  background-color: #ffcb2f;
+  color: white;
+}
+
+.selectedButton,
+.firstButton {
+  font-size: 15px;
+  border: 1px solid #ffcb2f;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 300;
+  background-color: #ffcb2f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workCard {
+  background: rgba(255, 255, 255, 0.7);
+  width: 25%;
+  min-height: 300px;
+  cursor: pointer;
+  position: relative;
+}
+.nameClient {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: flex-end;
+}
+.workCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.workTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 640px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+  .workCard{
+    padding: 200px;
+  }
+}

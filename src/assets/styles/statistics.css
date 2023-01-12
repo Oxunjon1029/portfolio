@@ -1,0 +1,34 @@
+.statistics {
+  width: 100%;
+  height: 55vh;
+  background-image: url('../images/statBack.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-attachment: fixed;
+}
+.backShadow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.statElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.statElements h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffcb2f;
+}
+.statElements p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}

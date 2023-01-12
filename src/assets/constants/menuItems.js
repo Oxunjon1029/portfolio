@@ -1,0 +1,32 @@
+export const menuItems = [
+  {
+    name:'Home',
+    id:'home',
+    key:1,
+  },
+  {
+    name:'About',
+    id:'info',
+    key:2,
+  },
+  {
+    name:'Resume',
+    id:'resume',
+    key:3,
+  },
+  {
+    name:'Work',
+    id:'work',
+    key:4,
+  },
+  {
+    name:'Testimonial',
+    id:'testimonial',
+    key:5,
+  },
+  {
+    name:'Contact',
+    id:'contact',
+    key:6,
+  },
+]
