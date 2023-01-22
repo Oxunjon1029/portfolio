@@ -25,7 +25,7 @@ function App() {
   }, [])
   // writing text
     let index = 0
-    let text = "Hello, I am Okhunjon Abdusalomov. I have been in this IT industry for about two years now."
+    let text = "Hello, I am Okhunjon Abdusalomov. I am a Front End Developer. I have been in this IT industry for about two years now."
     function writeText() {
       document.getElementById("homeContent").innerText = text.slice(0, index);
       index++;
