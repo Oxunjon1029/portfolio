@@ -17,7 +17,7 @@ const About = () => {
             only five centuries, but also the leap into electronic typesetting,
             remaining
           </p>
-          <button>Download Resume</button>
+          <a>Download Resume</a>
         </div>
       </div>
     </div>
