@@ -7,7 +7,7 @@ import '../assets/styles/myService.css';
 const Work = () => {
   const [worCards, setCards] = useState([...workCards]);
   let buttonId = getItem('buttonId');
-  console.log(buttonId)
+
   return (
     <div className='myWork' id='work'>
       <div className='work'>
@@ -36,6 +36,7 @@ const Work = () => {
               className='workCard'
               data-aos-duration='2000'
               data-aos='zoom-in'>
+
               <img src={card.img} alt='error img' />
               <div className='nameClient' id='nameClientId'>
                 <div className='workTitle'>{card.name}</div>

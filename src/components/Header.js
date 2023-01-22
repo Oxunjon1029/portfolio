@@ -5,6 +5,7 @@ import '../assets/styles/header.css';
 import scrollFunc from '../assets/functions/scroll';
 import smoothScroll from '../assets/functions/smoothScroll';
 import { menuItems } from '../assets/constants/menuItems';
+import logo from '../assets/images/logo.png';
 const Header = () => {
   const [iconStatus, setIconStatus] = useState(true);
   window.onscroll = function () {
@@ -13,7 +14,9 @@ const Header = () => {
 
   return (
     <div className='header' id='myHeader'>
-      <div className='logo'>A.O</div>
+      {/* <div className='logo'> */}
+        <img className="logo" src={logo} alt="error img" />
+      {/* </div> */}
       <div className='menu'>
         <Menu
           mode='horizontal'

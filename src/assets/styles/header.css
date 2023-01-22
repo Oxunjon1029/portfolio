@@ -5,10 +5,10 @@
   align-items: center;
   padding-top: 15px;
 }
-.logo {
-  color: yellow;
-  font-weight: bold;
-  font-size: 20px;
+.logo  {
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
 }
 .menu {
   display: flex;
@@ -26,6 +26,10 @@ li {
   .menuHorizontal{
     width: 300px !important;
   }  
+  .logo{
+    width: 10%;
+    height: 10%;
+  }
 }
 @media screen and (min-width:820px) and (max-width:1180px){
   .menuHorizontal{
