@@ -28,8 +28,9 @@
 }
 .texts h1,
 h3 {
-  color:yellow;
+  color:orange;
   text-align: center;
+  font-weight: 800;
 }
 .texts h1 {
   font-weight: bold;
