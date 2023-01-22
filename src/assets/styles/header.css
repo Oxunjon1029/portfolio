@@ -17,5 +17,18 @@
   height: 100%;
 }
 li {
-  color: white !important;
+  color: orange !important;
+}
+@media screen and (max-width:640px){
+  .header{
+    padding: 0;
+  }
+  .menuHorizontal{
+    width: 300px !important;
+  }  
+}
+@media screen and (min-width:820px) and (max-width:1180px){
+  .menuHorizontal{
+    width: 580px !important;
+  }
 }

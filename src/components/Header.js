@@ -22,7 +22,10 @@ const Header = () => {
             opacity: `${!iconStatus ? 1 : 0}`,
             backgroundColor: 'transparent',
             transition: "ease-in-out 0.5s"
-          }}>
+            
+          }}
+          className="menuHorizontal"
+          >
           {menuItems?.map((item) => {
             return (
               <Menu.Item key={item.key} onClick={() => smoothScroll(item.id)}>

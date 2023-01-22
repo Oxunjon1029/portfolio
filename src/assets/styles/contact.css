@@ -12,7 +12,7 @@
   font-weight: 900;
   text-transform: uppercase;
   font-size: 30px;
-  }
+}
 .contactInfoCon {
   display: flex;
   justify-content: space-between;
@@ -77,4 +77,41 @@
   -webkit-transition: all 0.4s !important;
   -webkit-transition: all 0.2s !important;
   transition: all 0.2s !important;
+}
+@media screen and (max-width: 640px) {
+  .myContact{
+    height: 120vh;
+  }
+  .contactInfoCon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    gap: 30px;
+  }
+  
+  .nameInput,
+  .emailInput {
+    width: 320px !important;
+  }
+  .contactFormCon{
+    width: 90% !important;
+  }
+}
+@media screen and (min-width:820px) and (max-width:1180px) {
+  .myContact{
+    height: 50vh;
+  }
+  .contactInfoCon{
+    gap: 15px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .myContact{
+    height: 60vh;
+  }
+  .contactInfoCon{
+    gap: 15px;
+  }
 }

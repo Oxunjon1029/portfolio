@@ -32,3 +32,32 @@
   font-weight: 300;
   color: #fff;
 }
+@media screen and (max-width: 640px) {
+  .statistics {
+    height: 80vh;
+    margin-top: 12px;
+  }
+  .backShadow {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  .statElements {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .statistics {
+    margin-top: 5px;
+  }
+  .backShadow {
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .statistics {
+    margin-top: 5px;
+  }
+  .backShadow {
+    gap: 3rem;
+  }
+}

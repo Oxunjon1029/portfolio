@@ -1,6 +1,5 @@
 .myService,
 .myExperience {
-  height: 100vh;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -11,12 +10,11 @@
 /* work */
 .myWork {
   background-color: #ffff;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  height: 100%;
 }
 .serviceCentered,
 .experienceCentered {
@@ -27,7 +25,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 /* work */
 .workCentered {
@@ -54,7 +51,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 20px;
+}
+.experienceCardContainer{
+  margin-bottom: 30px;
 }
 /* experience */
 .experienceCardContainer,
@@ -127,6 +127,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 20px;
 }
 /* work */
 .workCardContainer {
@@ -174,16 +175,13 @@
 }
 .workCard {
   background: rgba(255, 255, 255, 0.7);
-  width: 25%;
+  width: 23%;
   min-height: 300px;
   cursor: pointer;
-  position: relative;
 }
 .nameClient {
   width: 100%;
   height: 90%;
-  position: absolute;
-  bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -201,10 +199,110 @@
 }
 
 @media screen and (max-width: 640px) {
+  .work h1,
+  .experience h1,
+  .service h1 {
+    font-size: 25px;
+  }
   .cardContainer {
     flex-direction: column;
   }
-  .workCard{
-    padding: 200px;
+  .experienceCard {
+    width: 65%;
+    padding: 20px 50px;
+  }
+  .experienceCardContainer {
+    margin-bottom: 30px;
+  }
+  .myService {
+    margin-top: 200px;
+    padding: 0;
+  }
+
+  .myExperience,
+  .myWork {
+    padding: 0;
+  }
+
+  .experienceTitle {
+    font-size: 15px;
+  }
+  .yearCon {
+    font-size: 12px;
+    padding: 0;
+    width: 150px;
+    height: 28px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .work h1 {
+    text-align: center;
+  }
+  .selectedButton,
+  .radioButton {
+    font-size: 10px;
+  }
+  .workCardContainer {
+    gap: 15px;
+  }
+  .workCard {
+    width: 38%;
+    min-height: 150px;
+  }
+  .workTitle {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+  .serviceCard {
+    width: 60%;
+  }
+  .myService,
+  .myExperience {
+    padding: 0;
+  }
+  .experienceTitle {
+    font-size: 15px;
+  }
+  .yearCon {
+    font-size: 13px;
+    padding: 0;
+    width: 300px;
+    height: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .workCard {
+    width: 38%;
+    min-height: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+  .serviceCard {
+    width: 40%;
+  }
+  .experienceTitle {
+    font-size: 14px;
+  }
+  .yearCon {
+    font-size: 13px;
+    padding: 0;
+    width: 300px;
+    height: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .workCard {
+    width: 38%;
+    min-height: 100px;
   }
 }

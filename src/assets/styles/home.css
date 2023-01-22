@@ -29,7 +29,11 @@
 .texts h1,
 h3 {
   color:yellow;
+  text-align: center;
 }
 .texts h1 {
   font-weight: bold;
+}
+@media screen and (max-width:640px){
+
 }

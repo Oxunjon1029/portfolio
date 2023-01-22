@@ -1,6 +1,4 @@
-.about {
-  height: 80vh;
-}
+
 .aboutCenter {
   display: flex;
   justify-content: center;
@@ -8,7 +6,6 @@
   gap: 50px;
   width: 90%;
   margin: 50px auto;
-  padding: 60px;
 }
 
 .aboutImg {
@@ -42,12 +39,54 @@
   border: 1px solid orange;
   cursor: pointer;
 }
- /* @media screen and (max-width:640px) {
+ @media screen and (max-width:640px) {
+    .aboutText h1{
+      font-size: 25px;
+    }
    .aboutCenter{
      flex-direction: column;
    }
    .aboutImg {
-     width: 100%;
-     height: 100%;
+     width: 300px;
+     height: 300px;
+     border-radius:50%
    }
- } */
+   .aboutCenter{
+     padding: 0;
+   }
+   .aboutText button{
+     align-self: center;
+     width: 75%;
+     font-size: 20px;
+     font-weight: 700;
+   }
+ }
+
+ @media screen and (min-width:820px) and (max-width:1180px){
+   .aboutCenter{
+     padding: 0;
+   }
+   .aboutImg{
+     width: 40%;
+     height: 40%;
+     border-radius:50%;
+   }
+   .aboutText button{
+     width: 50%;
+     font-size: 18px;
+   }
+ }
+ @media screen and (min-width:768px) and (max-width:1024px){
+  .aboutCenter{
+    padding: 0;
+  }
+  .aboutImg{
+    width: 40%;
+    height: 40%;
+    border-radius:50%;
+  }
+  .aboutText button{
+    width: 50%;
+    font-size: 18px;
+  }
+ }

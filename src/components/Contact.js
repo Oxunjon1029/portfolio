@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
         <div className='contactFormCon' style={{ width: '58%' }}>
           <Form onFinish={onFinish}>
-            <Space direction='vertical' style={{ width: '100%' }}>
+            <Space  direction='vertical' style={{ width: '100%' }}>
               <Space
                 wrap
                 style={{ width: '100%', justifyContent: 'space-between' }}>
@@ -39,6 +39,7 @@ const Contact = () => {
                     placeholder='Name'
                     name='username'
                     size='large'
+                    className="nameInput"
                   />
                 </Form.Item>
                 <Form.Item>
@@ -47,6 +48,7 @@ const Contact = () => {
                     placeholder='Email'
                     name='email'
                     size='large'
+                    className="emailInput"
                   />
                 </Form.Item>
               </Space>
