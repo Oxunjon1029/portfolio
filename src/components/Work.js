@@ -19,7 +19,7 @@ const Work = () => {
             <div
               onClick={() => filter(workCards, setCards, button.id)}
               className={
-                button.id == buttonId
+                button.id === parseInt(buttonId)
                   ? 'selectedButton'
                   : 'radioButton'
               }
