@@ -11,7 +11,7 @@ const Home = () => {
       </div>
       <div className='texts'>
         <h1>Mr Okhunjon Abdusalomov</h1>
-        <h3 id="homeContent"></h3>
+        <h3 id="homeContent">...</h3>
       </div>
     </div>
   );
