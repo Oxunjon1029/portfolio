@@ -14,9 +14,7 @@ const Header = () => {
 
   return (
     <div className='header' id='myHeader'>
-      {/* <div className='logo'> */}
         <img className="logo" src={logo} alt="error img" />
-      {/* </div> */}
       <div className='menu'>
         <Menu
           mode='horizontal'

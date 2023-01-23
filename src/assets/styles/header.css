@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 15px;
+  padding:10px;
 }
-.logo  {
+.logo {
   width: 5%;
   height: 5%;
   border-radius: 50%;
@@ -19,20 +19,21 @@
 li {
   color: orange !important;
 }
-@media screen and (max-width:640px){
-  .header{
+
+@media screen and (max-width: 640px) {
+  .header {
     padding: 0;
   }
-  .menuHorizontal{
+  .menuHorizontal {
     width: 300px !important;
-  }  
-  .logo{
+  }
+  .logo {
     width: 10%;
     height: 10%;
   }
 }
-@media screen and (min-width:820px) and (max-width:1180px){
-  .menuHorizontal{
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .menuHorizontal {
     width: 580px !important;
   }
 }
