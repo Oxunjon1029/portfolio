@@ -1,7 +1,7 @@
 
 .aboutCenter {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
   width: 90%;
@@ -16,15 +16,17 @@
 .aboutText {
   display: flex;
   flex-direction: column;
+  width: 70%;
 }
 .aboutText h5 {
   margin: 30px 0;
 }
+
 .aboutText button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 15px;
   color: white;
   font-size: 15px;
@@ -41,6 +43,9 @@
   cursor: pointer;
 }
  @media screen and (max-width:640px) {
+   .aboutText{
+     width: 100%;
+   }
     .aboutText h1{
       font-size: 25px;
     }
@@ -87,7 +92,7 @@
     border-radius:50%;
   }
   .aboutText button{
-    width: 50%;
+    width: 100%;
     font-size: 18px;
   }
  }

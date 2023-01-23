@@ -8,7 +8,7 @@ export const workCards = [
   {
     id: 1,
     key: 1,
-    name: 'Web Design Project',
+    name: 'Android project',
     img: First,
     client: 'Jonathon Doe',
   },
@@ -22,14 +22,14 @@ export const workCards = [
   {
     id: 1,
     key: 3,
-    name: 'Web Design Project',
+    name: 'Andriod project',
     img: Third,
     client: 'Jonathon Doe',
   },
   {
     id: 3,
     key: 4,
-    name: 'Photography project',
+    name: 'IOS project',
     img: Fourth,
     client: 'Jonathon Doe',
   },
@@ -44,7 +44,7 @@ export const workCards = [
   {
     id: 3,
     key: 5,
-    name: 'Photography project',
+    name: 'IOS project',
     img: Fifth,
     client: 'Jonathon Doe',
   },

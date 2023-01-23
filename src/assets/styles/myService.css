@@ -53,7 +53,7 @@
   align-items: center;
   gap: 20px;
 }
-.experienceCardContainer{
+.experienceCardContainer {
   margin-bottom: 30px;
 }
 /* experience */
@@ -62,7 +62,7 @@
   flex-wrap: wrap;
 }
 .serviceCard {
-  min-width:30%;
+  min-width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,12 +70,15 @@
   gap: 15px;
   border: 1px solid #ffff;
   background-color: #ffff;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.8s;
   min-height: 300px;
 }
 .serviceTitle,
 .serviceContent {
   text-align: center;
+}
+.serviceTitle {
+  font-size: 20px;
 }
 .iconCon {
   width: 70px;
@@ -85,12 +88,14 @@
   align-items: center;
   border-radius: 50%;
   border: 1px solid rgba(255, 166, 0, 0.781);
-  transition: ease-in-out 0.8s;
+  transition: ease-in-out 1s;
 }
 .serviceCard:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
 .serviceCard:hover .iconCon {
   background-color: orange;
 }
@@ -207,19 +212,21 @@
   .cardContainer {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
   .experienceCard {
-    width: 65%;
+    width: 100%;
     padding: 20px 50px;
   }
   .experienceCardContainer {
     margin-bottom: 30px;
+    width: 100%;
   }
   .myService {
     margin-top: 50px;
     padding: 20px 0;
-    }
-  .serviceCard{
+  }
+  .serviceCard {
     min-height: 200px;
     width: 100%;
   }
@@ -250,8 +257,9 @@
   }
   .workCardContainer {
     gap: 15px;
+    width: 100%;
   }
-  
+
   .workCard {
     width: 38%;
     min-height: 150px;
@@ -267,7 +275,6 @@
   .serviceCard {
     width: 60%;
   }
-  .myService,
   .myExperience {
     padding: 0;
   }
@@ -283,9 +290,13 @@
     display: flex;
     align-items: center;
   }
+
   .workCard {
     width: 38%;
     min-height: 100px;
+  }
+  .experienceCard {
+    height: 300px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -310,5 +321,8 @@
   .workCard {
     width: 38%;
     min-height: 100px;
+  }
+  .experienceCard {
+    height: 300px;
   }
 }

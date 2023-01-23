@@ -80,7 +80,7 @@
 }
 @media screen and (max-width: 640px) {
   .myContact{
-    height: 120vh;
+    height: 100%;
   }
   .contactInfoCon {
     flex-direction: column;
@@ -101,7 +101,7 @@
 }
 @media screen and (min-width:820px) and (max-width:1180px) {
   .myContact{
-    height: 50vh;
+    height: 100%;
   }
   .contactInfoCon{
     gap: 15px;
@@ -109,7 +109,7 @@
 }
 @media screen and (min-width:768px) and (max-width:1024px){
   .myContact{
-    height: 60vh;
+    height: 100%;
   }
   .contactInfoCon{
     gap: 15px;

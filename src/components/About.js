@@ -10,8 +10,8 @@ const About = () => {
           <h1>A BRIEF ABOUT ME.</h1>
           <h4>Full Stack Developer</h4>
           <p>
-            I'm a React/Node js full stack developer.
-            I have about 2 years experience in React and 6 months in Node js.
+            I'm a React/Node js full stack developer.<br/>
+            I have about 2 years experience in React and 6 months in Node js.<br/>
             Additionally, I have some knowledge on React Native(Android/IOS)
           </p>
           <button>Download Resume</button>

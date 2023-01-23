@@ -40,12 +40,12 @@ const Header = () => {
           {iconStatus ? (
             <MenuUnfoldOutlined
               onClick={() => setIconStatus(false)}
-              style={{ color: 'yellow', fontWeight: 'bold', fontSize: '20px' }}
+              style={{ color: 'orange', fontWeight: 'bold', fontSize: '20px' }}
             />
           ) : (
             <CloseOutlined
               onClick={() => setIconStatus(true)}
-              style={{ color: 'yellow', fontWeight: 'bold', fontSize: '20px' }}
+              style={{ color: 'orange', fontWeight: 'bold', fontSize: '20px' }}
             />
           )}
         </div>

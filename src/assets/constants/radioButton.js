@@ -7,16 +7,16 @@ export const buttons = [
   {
     key:2,
     id:1,
-    name:'Web Design'
+    name:'Web Development'
   },
   {
     key:3,
     id:2,
-    name:'Development'
+    name:'Android'
   },
   {
     key:4,
     id:3,
-    name:'Photography'
+    name:'IOS'
   },
 ]
