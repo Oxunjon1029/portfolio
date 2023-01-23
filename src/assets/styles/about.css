@@ -20,7 +20,7 @@
 .aboutText h5 {
   margin: 30px 0;
 }
-.aboutText a {
+.aboutText button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@
   margin-top: 20px;
   text-decoration: none;
 }
-.aboutText a:hover {
+.aboutText button:hover {
   background-color: transparent;
   color: black;
   border: 1px solid orange;
@@ -55,7 +55,7 @@
    .aboutCenter{
      padding: 0;
    }
-   .aboutText a{
+   .aboutText button{
      align-self: center;
      width: 75%;
      font-size: 20px;
@@ -72,7 +72,7 @@
      height: 40%;
      border-radius:50%;
    }
-   .aboutText a{
+   .aboutText button{
      width: 50%;
      font-size: 18px;
    }
@@ -86,7 +86,7 @@
     height: 40%;
     border-radius:50%;
   }
-  .aboutText a{
+  .aboutText button{
     width: 50%;
     font-size: 18px;
   }
