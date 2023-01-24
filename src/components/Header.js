@@ -8,13 +8,14 @@ import { menuItems } from '../assets/constants/menuItems';
 import logo from '../assets/images/logo.png';
 const Header = () => {
   const [iconStatus, setIconStatus] = useState(true);
+
   window.onscroll = function () {
     scrollFunc('myHeader');
   };
 
   return (
     <div className='header' id='myHeader'>
-        <img className="logo" src={logo} alt="error img" />
+      <img className="logo" src={logo} alt="error img" />
       <div className='menu'>
         <Menu
           mode='horizontal'
@@ -23,10 +24,9 @@ const Header = () => {
             opacity: `${!iconStatus ? 1 : 0}`,
             backgroundColor: 'transparent',
             transition: "ease-in-out 0.5s"
-            
           }}
           className="menuHorizontal"
-          >
+        >
           {menuItems?.map((item) => {
             return (
               <Menu.Item key={item.key} onClick={() => smoothScroll(item.id)}>

@@ -12,7 +12,8 @@ import Work from './components/Work';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-// import writeText from './assets/functions/typingEffect';
+import MediaHeader from './components/MediaHeader';
+import scrollFunc from './assets/functions/scroll'
 function App() {
   // loader
   const [loading, setLoading] = useState(true)
@@ -24,22 +25,27 @@ function App() {
     AOS.init();
   }, [])
   // writing text
-    let index = 0
-    let text = "Hello, I am Okhunjon Abdusalomov. I am a Front End Developer. I have been in this IT industry for about two years now."
-    function writeText() {
-      document.getElementById("homeContent").innerText = text.slice(0, index);
-      index++;
-      if (index > text.lenght) {
-        index = 0;
-      }
+  let index = 0
+  let text = "Hello, I am Okhunjon Abdusalomov. I am a Front End Developer. I have been in this IT industry for about two years now."
+  function writeText() {
+    document.getElementById("homeContent").innerText = text.slice(0, index);
+    index++;
+    if (index > text.lenght) {
+      index = 0;
     }
-    setInterval(writeText, 50);
+  }
+  setInterval(writeText, 50);
+
+  window.onscroll = function () {
+    scrollFunc('myHeader');
+  };
   return (
     <div className="App" >
       {
         loading ? <Loader loading={loading} /> : (
           <>
             <Header />
+            <MediaHeader />
             <Home />
             <About />
             <MyServices />

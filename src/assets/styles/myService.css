@@ -253,7 +253,7 @@
   }
   .selectedButton,
   .radioButton {
-    font-size: 10px;
+    font-size: 12px;
   }
   .workCardContainer {
     gap: 15px;

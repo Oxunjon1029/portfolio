@@ -3,7 +3,7 @@ export default function myFunction(id) {
     document.body.scrollTop > 10 ||
     document.documentElement.scrollTop > 10
   ) {
-    document.getElementById(`${id}`).style.background = 'black ';
+    document.getElementById(`${id}`).style.background = 'black';
     document.getElementById(`${id}`).style.transition = 'all ease .6s';
     document.getElementById(`${id}`).style.zIndex = '1';
     document.getElementById(`${id}`).style.paddingTop = '10px';

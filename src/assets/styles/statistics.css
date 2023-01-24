@@ -35,7 +35,6 @@
 @media screen and (max-width: 640px) {
   .statistics {
     height: 80vh;
-    margin-top: 12px;
   }
   .backShadow {
     flex-wrap: wrap;
