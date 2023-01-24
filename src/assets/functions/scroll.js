@@ -1,7 +1,7 @@
 export default function myFunction(id) {
   if (
-    document.body.scrollTop > 10 ||
-    document.documentElement.scrollTop > 10
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
   ) {
     document.getElementById(`${id}`).style.background = 'black';
     document.getElementById(`${id}`).style.transition = 'all ease .6s';

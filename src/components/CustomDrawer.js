@@ -17,9 +17,9 @@ const CustomDrawer = (props) => {
       key={Math.random()}
       width="65%"
       placement="left"
-      bodyStyle={{ backgroundColor: "lightgreen" }}
+      bodyStyle={{ backgroundColor: "#00b96b" }}
       footer={
-        <h3 style={{color:"white",fontSize:"15px"}}>©Copyright Okhunjon Abdusalomov | All RightReserved.</h3>
+        <h3 style={{ color: "white", fontSize: "15px" }}>{props.text}</h3>
       }
       footerStyle={{ backgroundColor: "black" }}
     >
@@ -35,6 +35,7 @@ const CustomDrawer = (props) => {
       <Menu
         mode="vertical"
         defaultSelectedKeys={[sideBarMenuKey]}
+        style={{ backgroundColor: "transparent" }}
       >
         {
           menuItems.map((item) => (

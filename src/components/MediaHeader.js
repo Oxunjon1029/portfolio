@@ -5,9 +5,6 @@ import logo from '../assets/images/logo.png';
 import CustomDrawer from './CustomDrawer';
 const MediaHeader = () => {
   const [open, setOpen] = useState(false);
-
-  
-
   const showDrawer = () => {
     setOpen(true);
   };
@@ -17,10 +14,10 @@ const MediaHeader = () => {
 
 
   return (
-    <div className='mediaHeader' id='myHeader'>
+    <div className='mediaHeader'>
       <img className='mediaLogo' src={logo} alt='error img' />
       <div className='mediaMenu'>
-        <CustomDrawer onClose={onClose} open={open} />
+        <CustomDrawer onClose={onClose} open={open} text="©Copyright Okhunjon Abdusalomov | All RightReserved." />
         <div className='mediaMenuBurger'>
           <MenuUnfoldOutlined
             onClick={() => {

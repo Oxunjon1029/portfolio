@@ -32,15 +32,18 @@ li {
     display: none !important;
   }
   .mediaHeader {
-    width: 100% !important;
+    width: 100%;
     display: flex !important;
-    justify-content: space-around !important;
-    align-items: center !important;
+    justify-content: space-around;
+    align-items: center;
     gap: 300px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background-color: black;
+    padding: 20px 0;
+    z-index: 1;
   }
 
   .mediaLogo {
