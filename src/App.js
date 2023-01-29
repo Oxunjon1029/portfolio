@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import About from './components/About';
-import Header from './components/Header';
-import Home from './components/Home';
 import Loader from './components/Loader';
-import MyServices from './components/MyServices';
-import Statistics from './components/Statistics';
 import AOS from 'aos';
-import Experience from './components/Experience';
-import Work from './components/Work';
-import Testimonial from './components/Testimonial';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import MediaHeader from './components/MediaHeader';
 import scrollFunc from './assets/functions/scroll'
+import { componenstMap } from './assets/constants/componentsMap';
+import './App.css';
 function App() {
   // loader
   const [loading, setLoading] = useState(true)
@@ -35,7 +25,7 @@ function App() {
     }
   }
   setInterval(writeText, 50);
-
+  
   window.onscroll = function () {
     scrollFunc('myHeader');
   };
@@ -43,23 +33,17 @@ function App() {
     <div className="App" >
       {
         loading ? <Loader loading={loading} /> : (
-          <>
-            <Header />
-            <MediaHeader />
-            <Home />
-            <About />
-            <MyServices />
-            <Statistics />
-            <Experience />
-            <Work />
-            <Testimonial />
-            <Contact />
-            <Footer />
-          </>
+          <React.Fragment>
+            {
+              componenstMap.map((item) => (
+                <React.Fragment key={item.id}>
+                  {item.component}
+                </React.Fragment>
+              ))
+            }
+          </React.Fragment>
         )
       }
-
-
     </div>
   );
 }
